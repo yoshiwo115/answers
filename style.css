@@ -1,0 +1,147 @@
+
+body {
+	background-color: #aaf5ff;
+	margin: 0;
+}
+
+header{
+	background-color: #ffd2da;
+	text-align: right;/*右揃え*/
+	padding-bottom: 1.5%;
+	margin: 0;
+	background-size: cover;
+	background-position: 50% 50%;/*拡大したとき中央を基準に拡大する*/
+	
+	color: white;
+}
+
+header li{
+	display: inline-block;/*左揃え*/
+	padding-top: 1.0%;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 2.5%;
+	/*padding: 4px 8px(省略書き)*/	
+	font-size: 20px;
+}
+
+header li > a{
+	text-decoration: none; /*リンクの下線を消す*/
+	color: inherit; /*上位タグの設定を引き継ぐ*/
+}
+
+header li > a:hover{/*aにマウスカーソルが乗ったとき*/
+	color: red;
+}
+
+header ul{/*header内の*/
+	margin: 0px;
+	list-style-type: none;/*消すコマンド,ここではくろぽち*/
+	padding-left: 0;
+}
+
+.top {
+	/*color: rgb(0,255,0);/red,green,blue混ぜれる
+	color: #0000ff;/16進数でも表せる*/
+	color: #000;/*000が真っ黒、FFFが真っ白*/
+	padding-top: 5.5%;	
+	font-size: 50px;
+	font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+}
+
+.ABOUT{
+	background-color: #aaf5ff;
+	padding-left: 5%;
+}
+
+.UNIVERSITY{
+	background-color: #e5c4f8;
+	padding-left: 5%;
+}
+
+.ARTICLE{
+	background-color: #aaf5ff;
+	padding-left: 5%;
+	
+}
+
+.NEWS{
+	background-color: #e5c4f8;
+	padding-left: 5%;
+}
+
+.ADV{
+	background-color: #aaf5ff;
+	padding-left: 5%;
+	
+}
+
+h1{
+	padding-top: 5%;
+	text-shadow: 2px 2px 2px black;
+}
+
+footer{
+	margin-top: 0;
+	background-color: #ffd2da;
+	color: #125;
+	font-family: Verdana, sans-serif;/*フォントVerがなかったらsans*/
+	padding: 1.5%;
+}
+
+footer p{
+	text-align: right;
+}
+
+.UNIT{
+	color: #364e96;/*文字色*/
+	padding: 0.5em 0;/*上下の余白*/
+	border-top: solid 2px #364e96;/*上線*/
+	border-bottom: solid 2px #364e96;/*下線*/
+}
+
+header li ul{
+	display: none;
+}
+
+header li:hover ul{
+	display: block;
+}
+
+#page_top{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	opacity: 0.6;
+}
+
+#page_top a{
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+}
+
+#page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '↑';
+	font-size: 25px;
+	color: #000;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+	
